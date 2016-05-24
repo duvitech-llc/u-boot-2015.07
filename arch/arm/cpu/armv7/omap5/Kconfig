@@ -14,6 +14,10 @@ config TARGET_DRA7XX_EVM
 	bool "TI DRA7XX"
 	select CREATE_BOARD_SYMLINK
 
+config TARGET_D3_TDA2x 
+        bool "D3 TDA2x"
+        select CREATE_BOARD_SYMLINK
+
 config TARGET_BEAGLE_X15
 	bool "BeagleBoard X15"
 	select CREATE_BOARD_SYMLINK
@@ -26,6 +30,7 @@ config SYS_SOC
 source "board/compulab/cm_t54/Kconfig"
 source "board/ti/omap5_uevm/Kconfig"
 source "board/ti/dra7xx/Kconfig"
+source "board/d3/tda2x/Kconfig"
 source "board/ti/am57xx/Kconfig"
 
 endif

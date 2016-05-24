@@ -1,0 +1,12 @@
+if TARGET_D3_TDA2x
+
+config SYS_BOARD
+	default "tda2x"
+
+config SYS_VENDOR
+	default "d3"
+
+config SYS_CONFIG_NAME
+	default "d3_tda2eco"
+
+endif
